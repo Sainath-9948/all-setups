@@ -38,3 +38,7 @@ Type=forking
 LimitNOFILE=65536
 User=nexus
 Group=nexus
+
+#Enter this command separately after executing above commags in tools.sh
+
+docker run -itd --name sonar -p 9000:9000 sonarqube:lts-community
